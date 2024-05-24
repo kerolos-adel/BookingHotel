@@ -1,0 +1,21 @@
+﻿@model Villa
+
+   <div class="modal-dialog modal-xl" style="border:1px solid #aaa; border-radius:7px;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-3 text-success" id="exampleModalLabel">Villa Details - @Model.Name</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body m-0">
+           <partial name="_VillaDetails" model="@Model" />
+            </div>
+            <div class="modal-footer">
+            <a asp-controller="Home" asp-action="Index"
+               class="btn btn-outline-danger">
+                Close
+            </a>
+            </div>
+        </div>
+    </div>
+
+
